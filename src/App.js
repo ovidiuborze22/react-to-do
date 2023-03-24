@@ -9,8 +9,13 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-     WebStylePress
+    <div className="container App">
+
+      <br/><br/>
+      <h2>To Do List App (ReactJS)</h2>
+      <br/><br/>
+      
+      WebStylePress
     </div>
   );
 }
