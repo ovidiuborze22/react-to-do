@@ -19,7 +19,37 @@ function App() {
   const [newTask, setNewTask] = useState('');
   const [updateData, setUpdateData] = useState('');
 
-  
+  // Add task
+  const addTask = () => {
+    //
+  }
+
+  // Delete task
+  const deleteTask = (id) => {
+    //
+  }
+
+  // Mark task as done or completed
+  const markDone = (id) => {
+    //
+  }
+
+  // Cancel update
+  const cancelUpdate = () => {
+    //
+  }
+
+  // Change task for update
+  const changeTask = (e) => {
+    //
+  }
+
+  // Update task
+  const updateTask = () => {
+    //
+  }
+
+
   return (
     <div className="container App">
 
