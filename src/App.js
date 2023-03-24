@@ -10,7 +10,7 @@ import './App.css';
 function App() {
 
   // Tasks (ToDo List) State
-  const [ToDo, setToDo] = useState([
+  const [toDo, settoDo] = useState([
     {"id": 1, "title": "Task 1", "status": false},
     {"id": 2, "title": "Task 2", "status": false}
   ]);
@@ -56,6 +56,25 @@ function App() {
       <br/><br/>
       <h2>To Do List App (ReactJS)</h2>
       <br/><br/>
+
+      {/* Display ToDos */}
+
+      {toDo && toDo.length ? '' : 'No Tasks...'}
+      {toDo && toDo
+      .map((task, index) => {
+        return(
+          <React.Fragment key={task.id}>
+            <div className='col taskBg'>
+              <div className={task.status ? 'done' : ''}>
+              <span className='taskText'>{index + 1}</span>
+            <span className='taskText'>{task.title}</span>
+              </div>
+            </div>
+           
+          </React.Fragment>
+        )
+      })}
+
     </div>
   );
 }
