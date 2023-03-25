@@ -90,10 +90,10 @@ function App() {
       )}
       {toDo && toDo.length ? "" : "No Tasks..."}
       <ToDo
-      // To Do Component
+        // To Do Component
         toDo={toDo}
-        markDone={markDone} 
-        setUpdateData={setUpdateData} 
+        markDone={markDone}
+        setUpdateData={setUpdateData}
         deleteTask={deleteTask}
       />
     </div>
